@@ -151,5 +151,4 @@
         {:args args, :ret ret}))
     {:lint-as {'malli.schema/defn 'schema.core/defn}} xs))
 
-#?(:clj
-   (defn emit! [] (-> (collect) (linter-config) (save!)) nil))
+#?(:clj (defn emit! [] (-> (collect) (linter-config) (save!)) nil))
